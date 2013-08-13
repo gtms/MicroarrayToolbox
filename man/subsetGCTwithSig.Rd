@@ -1,0 +1,42 @@
+\name{subsetGCTwithSig}
+\alias{subsetGCTwithSig}
+\title{
+subsetGCTwithSig: subsets a gct with a gene signature
+}
+\description{
+given a gct and a character vector of gene symbols 'sig', returns the
+subset of the gct for which 'row.descriptions' matches 'sig'
+}
+\usage{
+subsetGCTwithSig(gct, sig)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{gct}{
+a gct object, see details
+}
+  \item{sig}{
+a character vector of gene symbols to be matched with row.descriptions
+}
+}
+\details{
+Argument gct is a list composed of the following elements:
+\itemize{
+  \item{row.descriptions}{character vector of length equal to the first
+dimension of the data matrix, specifying the gene symbols for each
+probe in the array}
+  \item{data}{matrix containing the expression data. Each row corresponds
+to a feature and each column to a sample. Rownames and colnames
+specify, respectively, the unique manufacturer's feature-specific identifiers
+and the unique sample identifiers}
+}
+}
+\value{
+A gct object, see details for more information on its structure.
+}
+\references{
+See more details here:
+\url{
+http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats/sections/gct
+}
+}
