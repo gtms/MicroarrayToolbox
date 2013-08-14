@@ -1,6 +1,9 @@
 ## getGO
 ## 29Jul2013
 ##
+## UPDATED on 14Aug2013:
+## updated the name of the function 'instant.pkgs' to 'instantPkgs'
+##
 ## given a character vector of gene symbols OR a character numeric vector of
 ## Entrez IDs, returns a data table, with the following variables:
 ## gene: factor with the gene symbols queried 
@@ -25,7 +28,7 @@ getGO <- function (vec, # character vector of gene symbols OR numeric
                            repos = c (rep ("cran", 2),
                                rep ("bioc", 2)),
                            stringsAsFactors = FALSE)
-    instant.pkgs (pkg.dfr)
+    instantPkgs (pkg.dfr)
 
     ## reformats GO.db keys 
     myGO2df <- function (go) {

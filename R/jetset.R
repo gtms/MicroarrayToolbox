@@ -1,6 +1,9 @@
 ## jetSet
 ## 30Jul2013
 ##
+## UPDATED on 14Aug2013:
+## updated the name of the function 'instant.pkgs' to 'instantPkgs'
+##
 ## given a gct of an Affymetrix gene expression matrix and a character
 ## vector identifying the chip used in the experiment (annotation.pkg, which must
 ## evaluate to one of c ("hgu133a", "hgu133plus2", "hgu95av2"), returns a gct with
@@ -21,7 +24,7 @@ jetSet <- function (gct,
                                paste0 (annotation.pkg, ".db")),
                            repos = c ("cran", rep ("bioc", 2)),
                            stringsAsFactors = FALSE)
-    instant.pkgs (pkg.dfr)
+    instantPkgs (pkg.dfr)
     dfr <- jscores (annotation.pkg)
     dtb <- data.table (dfr, keep.rownames = TRUE)
     setnames (dtb, "rn", "probeset")

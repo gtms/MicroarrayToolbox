@@ -1,6 +1,9 @@
 ## ggplotMDS
 ## 30Jul2013
 ##
+## UPDATED on 14Aug2013:
+## updated the name of the function 'instant.pkgs' to 'instantPkgs'
+##
 ## given a gct and a number of graphical parameters, returns a ggplot
 ## representing an MDS of the samples, which can be save on disk on
 ## location determined by the varaible 'path'
@@ -17,7 +20,7 @@ ggplotMDS <- function (gct,
                                "MASS"),
                            repos = c (rep ("cran", 2)),
                            stringsAsFactors = FALSE)
-    instant.pkgs (pkg.dfr)
+    instantPkgs (pkg.dfr)
     dst.mtx <- as.dist (1 - cor (gct$data,
                                  use = "complete.obs"))
     mds.lst <- isoMDS (dst.mtx,

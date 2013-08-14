@@ -1,6 +1,9 @@
 ## getGeneAnnotation
 ## 24Jul2013
 ##
+## UPDATED on 14Aug2013:
+## updated the name of the function 'instant.pkgs' to 'instantPkgs'
+##
 ## given a character vector of Affymetrix identifiers, returns a data table,
 ## not keyed, with the following variables:
 ## vendor.id: character vector of the provided Affymetrix identifiers
@@ -20,7 +23,7 @@ getGeneAnnotation <- function (affy.ids,
                                paste0 (annotation.pkg, ".db")),
                            repos = c ("bioc", "cran", "bioc"),
                            stringsAsFactors = FALSE)
-    instant.pkgs (pkg.dfr)
+    instantPkgs (pkg.dfr)
 
     ## some probesets are mapped into more than one genomic location
     map.lst <- lookUp (affy.ids, annotation.pkg, "MAP")

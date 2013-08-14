@@ -1,5 +1,11 @@
 ## Adapted from https://github.com/gimoya/theBioBucket-Archives/blob/master/R/Functions/instant_pkgs.R
 ## 24Jul2013
+##
+## UPDATED on 14Aug2013:
+## Updated name of function to 'instantPkgs' in order to adhere to functions
+## naming conventions. This change was reflected on the source code of the
+## functions making use of 'instantPkgs' (get-gene-annotation.R,
+## get-gene-ontology.R, ggplot-heatmap.R, ggplot-mds.R, jetset.R and sam.R)
 
 ## Script name: instant-packages.R
 ## Purpose: Package installation and loading
@@ -11,7 +17,7 @@
 ## installed (pkgs) and the corresponding repositories to fetch them from
 ## (repos, must be one of `cran' or `bioc')
 
-instant.pkgs <- function (pkg.dfr,
+instantPkgs <- function (pkg.dfr,
                           verbose = FALSE) {
     ## define inst.pkg
     inst.pkg <- function (pkg, repos = NULL) {

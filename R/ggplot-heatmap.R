@@ -1,6 +1,9 @@
 ## ggHeat
 ## 30Jul2013
 ##
+## UPDATED on 14Aug2013:
+## updated the name of the function 'instant.pkgs' to 'instantPkgs'
+##
 ## Adapted from
 ## http://is-r.tumblr.com/post/32387034930/simplest-possible-heatmap-with-ggplot2
 ## 20Oct2012
@@ -26,7 +29,7 @@ ggHeat <- function (mtx, # mtx is required to be of class 'matrix'
                                "reshape2", "RColorBrewer"),
                            repos = rep ("cran", 3),
                            stringsAsFactors = FALSE)
-    instant.pkgs (pkg.dfr)
+    instantPkgs (pkg.dfr)
 
     ## For melt () to work seamlessly, mtx has to be a matrix.
     if (!is.matrix (mtx)) stop ("Argument 'mtx' has to be of class 'matrix'")

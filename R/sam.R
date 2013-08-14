@@ -1,5 +1,8 @@
-## SAM
+## sam
 ## 06Aug2013
+##
+## UPDATED on 14Aug2013:
+## updated the name of the function 'instant.pkgs' to 'instantPkgs'
 ##
 ## This function is a wrapper for the SAM function of the 'samr'
 ## package that implements the Significant Analysis of Microarrays
@@ -24,7 +27,7 @@ sam <- function (gct,
                                "data.table"),
                            repos = rep ("cran", 2),
                            stringsAsFactors = FALSE)
-    instant.pkgs (pkg.dfr)
+    instantPkgs (pkg.dfr)
     
     ## removes samples with more than 80% missing values
     id80 <- apply (gct$data, 2, function (x) {
