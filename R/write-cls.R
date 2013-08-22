@@ -1,14 +1,3 @@
-## writeCLS
-## 06Aug2013
-##
-## This function is taken from the package GenePattern, available from
-## http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/programmers/sections/gp_r
-##
-## given cls file and a file path, writes a cls file on disk
-## see:
-## http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats/sections/cls
-## for more information
-
 writeCLS <- function (cls,
                       filename,
                       check.file.extension = TRUE) {

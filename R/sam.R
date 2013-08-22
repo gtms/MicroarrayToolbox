@@ -1,20 +1,5 @@
-## sam
-## 06Aug2013
-##
-## UPDATED on 14Aug2013:
-## updated the name of the function 'instant.pkgs' to 'instantPkgs'
-##
-## This function is a wrapper for the SAM function of the 'samr'
-## package that implements the Significant Analysis of Microarrays
-## algorithm, described in Tusher, V., Tibshirani, R. and Chu,
-## G. (2001): Significance of microarrays applied to the ionizing
-## radiation response PNAS 2001 98:5116-5121, (Apr 24).  The
-## expression data should be provided in the gct format.
-
 sam <- function (gct,
-                 class.id = NULL, # logical vector specifying the two
-                                        # classes: TRUE for class one and FALSE
-                                        # for class two
+                 class.id = NULL,
                  resp.type = c ("Quantitative", "Two class unpaired",
                      "Survival", "Multiclass", "One class", "Two class paired",
                      "Two class unpaired timecourse", "One class timecourse",
@@ -22,13 +7,6 @@ sam <- function (gct,
                  testStatistic = "standard",
                  nperms = 500,
                  logged2 = TRUE) {
-    
-    pkg.dfr <- data.frame (pkg = c ("samr",
-                               "data.table"),
-                           repos = rep ("cran", 2),
-                           stringsAsFactors = FALSE)
-    instantPkgs (pkg.dfr)
-    
     ## removes samples with more than 80% missing values
     id80 <- apply (gct$data, 2, function (x) {
         sum (is.na (x)) / length (x) < .8

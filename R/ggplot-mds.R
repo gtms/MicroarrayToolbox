@@ -1,26 +1,11 @@
-## ggplotMDS
-## 30Jul2013
-##
-## UPDATED on 14Aug2013:
-## updated the name of the function 'instant.pkgs' to 'instantPkgs'
-##
-## given a gct and a number of graphical parameters, returns a ggplot
-## representing an MDS of the samples, which can be save on disk on
-## location determined by the varaible 'path'
-
 ggplotMDS <- function (gct,
-                       labels = NULL, # alternative factor of sample names
-                       colour = NULL, # factor specifying colours (if any)
-                       title = "MDS", # title of the plot
+                       labels = NULL,
+                       colour = NULL,
+                       title = "MDS",
                        path = NULL,
                        width = 10,
                        height = 7,
-                       ...) { # path of the pdf file to be saved
-    pkg.dfr <- data.frame (pkg = c ("ggplot2",
-                               "MASS"),
-                           repos = c (rep ("cran", 2)),
-                           stringsAsFactors = FALSE)
-    instantPkgs (pkg.dfr)
+                       ...) {
     dst.mtx <- as.dist (1 - cor (gct$data,
                                  use = "complete.obs"))
     mds.lst <- isoMDS (dst.mtx,

@@ -9,3 +9,6 @@ MicroarrayToolbox 0.2
   exported.
 
 * Updated DESCRIPTION file to reflect changes in version 0.2.
+
+* Removed any reference to function instant.pkgs from source code files. Removed
+  comments from source code files.

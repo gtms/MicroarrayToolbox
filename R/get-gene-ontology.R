@@ -1,35 +1,6 @@
-## getGO
-## 29Jul2013
-##
-## UPDATED on 14Aug2013:
-## updated the name of the function 'instant.pkgs' to 'instantPkgs'
-##
-## given a character vector of gene symbols OR a character numeric vector of
-## Entrez IDs, returns a data table, with the following variables:
-## gene: factor with the gene symbols queried 
-## go: character vector with each of the retrieved Gene Ontology identifiers
-## go.evidence: factor of the retrieved Gene Ontology evidence codes
-## (cf. http://www.geneontology.org/GO.evidence.shtml)
-## go.ontology: factor of the retrieved Gene Ontology domains terms
-## (cf. http://www.geneontology.org/GO.ontology.structure.shtml)
-## term: factor of the retrieved Gene Ontology terms
-
-getGO <- function (vec, # character vector of gene symbols OR numeric
-                                        # vector of entrez gene ids
-                   is.symbol = TRUE, # if FALSE, assumes vec is a
-                                        # numeric vector of entrez gene ids
-                   path = NULL) { # full path of the .csv file should
-                                        # the user want to save the output
-                                        # on disk
-    pkg.dfr <- data.frame (pkg = c ("plyr",
-                               "data.table",
-                               "org.Hs.eg.db",
-                               "GO.db"),
-                           repos = c (rep ("cran", 2),
-                               rep ("bioc", 2)),
-                           stringsAsFactors = FALSE)
-    instantPkgs (pkg.dfr)
-
+getGO <- function (vec,
+                   is.symbol = TRUE,
+                   path = NULL) {
     ## reformats GO.db keys 
     myGO2df <- function (go) {
         dfr <- as.data.frame (Term (go$GOID))

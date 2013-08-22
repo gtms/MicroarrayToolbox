@@ -1,14 +1,3 @@
-## writeGCT
-## 06Aug2013
-##
-## This function is taken from the package GenePattern, available from
-## http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/programmers/sections/gp_r
-##
-## given gct file and a file path, writes a gct file on disk
-## see:
-## http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats/sections/gct
-## for more information
-
 writeGCT <- function (gct,
                       filename,
                       check.file.extension = TRUE) {

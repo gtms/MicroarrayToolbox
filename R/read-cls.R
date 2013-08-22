@@ -1,14 +1,3 @@
-## readCLS
-## 06Aug2013
-##
-## This function is taken from the package GenePattern, available from
-## http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/programmers/sections/gp_r
-##
-## given a file path, reads a cls file into memory
-## see:
-## http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats/sections/cls
-## for more information
-
 readCLS <- function (file) {
     if (is.character (file)) 
         if (file == "") { 
