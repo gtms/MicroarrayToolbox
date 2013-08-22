@@ -47,7 +47,7 @@ Eventually remove the function and resort to NAMESPACE to fill the void.
 Export all functions except for check-extension.R; create export
 pattern based on first character of the function NOT being a dot.
 ** DONE Remove comments from source code
-** TODO Update README.md
+** DONE Update README.md
 Reflects packages to install prior to installation, split by repos (CRAN, Bioconductor and Jetset)
 
 * .Rd files sections

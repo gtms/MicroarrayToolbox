@@ -12,3 +12,5 @@ MicroarrayToolbox 0.2
 
 * Removed any reference to function instant.pkgs from source code files. Removed
   comments from source code files.
+
+* Updated README.md file to reflect changes in version 0.2

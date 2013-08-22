@@ -8,6 +8,19 @@ MicroarrayToolbox is an R package containing functions that provide basic functi
 
 ## Installation
 
+MicroarrayToolbox requires the prior installation of the following packages:
+* data.table (CRAN)
+* MASS (CRAN)
+* ggplot2 (CRAN)
+* annotate (Bioconductor)
+* org.Hs.eg.db (Bioconductor)
+* GO.db (Bioconductor)
+* RColorBrewer (CRAN)
+* samr (CRAN)
+* jetset (source tarball available here: http://www.cbs.dtu.dk/biotools/jetset/)
+
+***
+
 To install MicroarrayToolbox on your system, use the 'devtools' package:
 
     ## install.packages ("devtools")
