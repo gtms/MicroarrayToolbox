@@ -1,4 +1,4 @@
-checkExtension <- function (file.name,
+.checkExtension <- function (file.name,
                              extension) {
   ext <- regexpr (paste (extension, "$", sep = ""),
                   tolower (file.name))

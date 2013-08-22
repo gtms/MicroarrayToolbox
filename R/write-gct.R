@@ -2,7 +2,7 @@ writeGCT <- function (gct,
                       filename,
                       check.file.extension = TRUE) {
     if (check.file.extension) {
-        filename <- checkExtension (filename, ".gct")
+        filename <- .checkExtension (filename, ".gct")
     }
     f <- file (filename, "w")
     on.exit (close (f))

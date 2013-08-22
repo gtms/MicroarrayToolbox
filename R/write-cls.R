@@ -2,7 +2,7 @@ writeCLS <- function (cls,
                       filename,
                       check.file.extension = TRUE) {
     if (check.file.extension) {
-        filename <- checkExtension (filename, ".cls")
+        filename <- .checkExtension (filename, ".cls")
     }
     file <- file (filename, "w")
     on.exit (close (file))
