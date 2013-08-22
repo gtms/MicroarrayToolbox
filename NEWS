@@ -1,0 +1,5 @@
+MicroarrayToolbox 0.2
+--------------------------------------------------------------------------------
+
+* Updated man files, unified GenePattern functions with aliases under the new
+  GenePattern-functions.Rd file.

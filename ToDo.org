@@ -5,6 +5,27 @@
 readGCT, readCLS, writeGCT and writeCLS all share the same .Rd file
 ** TODO Standardize .Rd files
 Use R CMD Rd2txt to display .Rd files on terminal console
+*** DONE getGO.Rd
+*** DONE collapseRows.Rd
+*** DONE computeSuperIndex.Rd
+*** DONE checkExtension.Rd
+*** DONE subsetGCTsamples.Rd
+*** DONE writeGCT.Rd
+*** DONE writeCLS.Rd
+*** DONE rmInvariantFeatures.Rd
+*** DONE MicroarrayToolbox-package.Rd
+bumped version to 0.2!
+*** DONE ggHeat.Rd
+*** DONE ggplotMDS.Rd
+*** DONE sam.Rd
+*** DONE subsetGCTwithSig.Rd
+*** DONE pruneFeatures.Rd
+*** DONE mergeGCTs.Rd
+*** DONE jetSet.Rd
+*** DONE instantPkgs.Rd
+*** DONE getGeneAnnotation.Rd
+*** DONE readGCT.Rd
+*** DONE readCLS.Rd
 ** TODO Add section Imports in DESCRIPTION file
 Packages to be imported include:
   - data.table
@@ -28,3 +49,29 @@ pattern based on first character of the function NOT being a dot.
 - add imports
 ** TODO Update README.md
 Reflects packages to install prior to installation, split by repos (CRAN, Bioconductor and Jetset)
+
+* .Rd files sections
+** details
+\details{
+A gct object is a list composed of the following objects:
+\itemize{
+  \item{row.descriptions: }{character vector of length equal to the first
+dimension of the data matrix, specifying the symbols of the genes targeted by
+each feature in the array}
+  \item{data: }{matrix containing the expression data. Each row corresponds to a
+feature and each column to a sample. Rownames and colnames specify,
+respectively, the unique manufacturer's feature-specific identifiers and the
+unique sample identifiers}
+}
+}
+** references & author
+\references{
+More details about the gct format here:
+\url{
+http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats/sections/gct
+}
+}
+\author{
+Gil Tomas
+\email{gil.tomas@ulb.ac.be}
+}

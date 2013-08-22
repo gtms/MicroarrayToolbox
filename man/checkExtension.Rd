@@ -1,8 +1,7 @@
 \name{checkExtension}
 \alias{checkExtension}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-checkExtension: checks for correct extension of file names
+checkExtension: checks for correct extensions of file names
 }
 \description{
 This is an internal function of the GenePattern package.
@@ -10,12 +9,11 @@ This is an internal function of the GenePattern package.
 \usage{
 checkExtension(file.name, extension)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{file.name}{
+  \item{file.name }{
 character vector specifying the file name to be written
 }
-  \item{extension}{
+  \item{extension }{
 character vector specifying the extension to be checked
 }
 }
@@ -23,11 +21,12 @@ character vector specifying the extension to be checked
 Returns a character string with the correct extension properly appended to the file name.
 }
 \references{
-See more details here:
+About the GenePattern package:
 \url{
 http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/programmers/sections/gp_r
 }
 }
 \author{
-Broad Institute
+Gil Tomas
+\email{gil.tomas@ulb.ac.be}
 }

@@ -5,14 +5,10 @@ getGeneAnnotation: retrieves relevant gene annotation information
 associated to a string of Affymetrix probesets identifiers
 }
 \description{
-given a character vector of Affymetrix identifiers, returns a data table,
-not keyed, with the following variables:
-vendor.id: character vector of the provided Affymetrix identifiers
-symbol: character vector of the corresponding gene symbols
-gene.name: character vector of the corresponding gene names
-entrez.id: numeric vector of the corresponding NCBI entrez gene IDs
-ACCNUM: character vector of the corresponding GeneBank accesion numbers
-map: character vector of the corresponding probesets' genomic locations
+Given a character vector of Affymetrix identifiers, returns a data table with
+the following variables: original Affymetrix identifiers followed by the
+corresponding gene symbols, gene names, entrez IDs, Gene Bank accession numbers
+(ACCNUM) and probesets' genomic locations.
 }
 \usage{
 getGeneAnnotation(affy.ids, annotation.pkg)
@@ -45,4 +41,8 @@ A list of bioconductor annotation packages can found here:
 \url{
 http://www.bioconductor.org/packages/release/data/annotation/
 }
+}
+\author{
+Gil Tomas
+\email{gil.tomas@ulb.ac.be}
 }

@@ -5,13 +5,12 @@ ggplotMDS: draws a MDS plot from a gct
 }
 \description{
 Given a gct and a number of graphical parameters, returns a ggplot
-with a visual representation of a Multidimensional Scaling of the
-samples.
+with a visual representation of a Multidimensional Scaling of the expression
+profiles of the samples.
 }
 \usage{
 ggplotMDS(gct, labels = NULL, colour = NULL, title = "MDS", path = NULL, width = 10, height = 7, ...)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{gct}{
 a gct object, see details
@@ -29,7 +28,7 @@ character vector specifying the title of the plot
 }
   \item{path}{
 character vector specifying the eventual path on disk where to write the output
-pdf file
+pdf file (the complete file path is a concatenate of this variable and the title variable)
 }
   \item{width}{
 graphical parameter specifying the width of the output pdf file
@@ -42,20 +41,24 @@ arguments to be passed to methods, such as graphical parameters
 }
 }
 \details{
-A gct is a list composed of the following elements:
+A gct object is a list composed of the following objects:
 \itemize{
-  \item{row.descriptions}{character vector of length equal to the first
-dimension of the data matrix, specifying the gene symbols for each
-probe in the array}
-  \item{data}{matrix containing the expression data. Each row corresponds
-to a feature and each column to a sample. Rownames and colnames
-specify, respectively, the unique manufacturer's feature-specific identifiers
-and the unique sample identifiers}
+  \item{row.descriptions: }{character vector of length equal to the first
+dimension of the data matrix, specifying the symbols of the genes targeted by
+each feature in the array}
+  \item{data: }{matrix containing the expression data. Each row corresponds to a
+feature and each column to a sample. Rownames and colnames specify,
+respectively, the unique manufacturer's feature-specific identifiers and the
+unique sample identifiers}
 }
 }
 \references{
-For more details on the gct format:
+More details about the gct format here:
 \url{
 http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats/sections/gct
 }
+}
+\author{
+Gil Tomas
+\email{gil.tomas@ulb.ac.be}
 }

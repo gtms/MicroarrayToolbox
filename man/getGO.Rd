@@ -6,7 +6,7 @@ gene symbols
 }
 \description{
 Given a character vector of gene symbols OR a numeric vector of Entrez
-IDs, returns a data table, with the following variables: genes
+IDs, returns a data table with the following variables: genes
 queried; Gene Ontology identifiers; Gene Ontology evidence codes; Gene
 Ontology domain terms and Gene Ontology terms.
 }
@@ -33,16 +33,14 @@ If path is NULL, no file will be written on disk.
 \value{
 A data table with the following variables:
   \item{gene}{factor of the queried genes symbols}
-  \item{go}{character vector with each of the retrieved Gene Ontology identifiers}
+  \item{go}{character vector of the retrieved Gene Ontology identifiers}
   \item{go.evidence}{factor of the retrieved Gene Ontology evidence
-  codes (cf. http://www.geneontology.org/GO.evidence.shtml)}
+  codes (\url{http://www.geneontology.org/GO.evidence.shtml})}
   \item{go.ontology}{factor of the retrieved Gene Ontology domains
-  terms (cf. http://www.geneontology.org/GO.ontology.structure.shtml)}
+  terms (\url{http://www.geneontology.org/GO.ontology.structure.shtml})}
   \item{term}{factor of the Gene Ontology terms}
 }
-\references{
-See:
-\url{
-http://www.geneontology.org/
-}
+\author{
+Gil Tomas
+\email{gil.tomas@ulb.ac.be}
 }

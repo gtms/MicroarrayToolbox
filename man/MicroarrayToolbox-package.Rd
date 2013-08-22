@@ -10,12 +10,10 @@ http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats
 \tabular{ll}{
 Package: \tab MicroarrayToolbox\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2013-08-07\cr
+Version: \tab 0.2\cr
+Date: \tab 2013-08-22\cr
 License: \tab GPL (>= 3)\cr
 }
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
 }
 \author{
 Gil Tomas and others.
