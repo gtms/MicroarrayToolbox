@@ -7,3 +7,5 @@ MicroarrayToolbox 0.2
 * Removed instant-packages.R function and created an NAMESPACE file to deal with
   package dependencies. Only newly renamed .check-extension.R file is not
   exported.
+
+* Updated DESCRIPTION file to reflect changes in version 0.2.

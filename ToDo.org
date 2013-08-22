@@ -1,9 +1,9 @@
 #+STARTUP: indent
 
 * To Do
-** TODO Create Aliases for the GenePattern functions .Rd files
+** DONE Create Aliases for the GenePattern functions .Rd files
 readGCT, readCLS, writeGCT and writeCLS all share the same .Rd file
-** TODO Standardize .Rd files
+** DONE Standardize .Rd files
 Use R CMD Rd2txt to display .Rd files on terminal console
 *** DONE getGO.Rd
 *** DONE collapseRows.Rd
@@ -26,7 +26,10 @@ bumped version to 0.2!
 *** DONE getGeneAnnotation.Rd
 *** DONE readGCT.Rd
 *** DONE readCLS.Rd
-** TODO Add section Imports in DESCRIPTION file
+** DONE Update DESCRIPTION file
+- bumping package version to 0.2
+- add imports
+** DONE Add section Imports in DESCRIPTION file
 Packages to be imported include:
   - data.table
   - MASS
@@ -38,15 +41,12 @@ Packages to be imported include:
   - samr
   - jetset
 
-** TODO Solve issue with instant-pkgs.R
+** DONE Solve issue with instant-pkgs.R
 Eventually remove the function and resort to NAMESPACE to fill the void.
-** TODO Create a NAMESPACE for the package
+** DONE Create a NAMESPACE for the package
 Export all functions except for check-extension.R; create export
 pattern based on first character of the function NOT being a dot.
 ** TODO Remove comments from source code
-** TODO Update DESCRIPTION file
-- bumping package version to 0.2
-- add imports
 ** TODO Update README.md
 Reflects packages to install prior to installation, split by repos (CRAN, Bioconductor and Jetset)
 
