@@ -1,6 +1,5 @@
 jetSet <- function (gct,
-                    annotation.pkg) {x
-    if (!require (jetset)) stop (cat ("Please make sure that the latest version of the 'jetset' package is installed.\nYou can download it from here: http://www.cbs.dtu.dk/biotools/jetset/\n"))
+                    annotation.pkg) {
     dfr <- jscores (annotation.pkg)
     dtb <- data.table (dfr, keep.rownames = TRUE)
     setnames (dtb, "rn", "probeset")

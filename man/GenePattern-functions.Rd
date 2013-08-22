@@ -22,7 +22,10 @@ a gct object, see details
 } 
   \item{cls}{
 a cls object, see details
-} 
+}
+  \item{file}{
+character vector specifying the path to the file to be read from disk
+}
   \item{filename}{
 character vector specifying the path of the file to be saved on disk
 }

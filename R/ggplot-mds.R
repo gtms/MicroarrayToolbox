@@ -32,7 +32,7 @@ ggplotMDS <- function (gct,
                                    size = 15))
     if (!is.null (path)) {
         mds.plot
-        ggsave (file = tolower (file.path (path,
+        ggsave (filename = tolower (file.path (path,
                     paste (title = gsub (" ", "-", title), ".pdf", sep = ""))),
                 width = width,
                 height = height)

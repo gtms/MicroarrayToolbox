@@ -43,7 +43,7 @@ ggHeat <- function (mtx,
 
     if (!is.null (path)) {
         zp1
-        ggsave (file = tolower (file.path (path,
+        ggsave (filename = tolower (file.path (path,
                     paste (title = gsub (" ", "-", title), ".pdf", sep = ""))),
                 width = width,
                 height = height)

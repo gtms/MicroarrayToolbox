@@ -8,12 +8,12 @@ Maintainer: Gil Tomas <gil.tomas@ulb.ac.be>
 Description: These functions provide basic functionality to explore gene expression profiles data. In order to streamline and standardize analyses, microarray data is expected to be provided in the 'gct' format, proposed by the Broad Institute
 License: GPL (>= 3)
 Imports:
-    data.table (>= 1.8.8)
-    MASS
-    ggplot2 (>= 0.9.3.1)
-    annotate
-    org.Hs.eg.db
-    GO.db
-    RColorBrewer
-    samr
+    data.table (>= 1.8.8),
+    MASS,
+    ggplot2 (>= 0.9.3.1),
+    annotate,
+    org.Hs.eg.db,
+    GO.db,
+    RColorBrewer,
+    samr,
     jetset

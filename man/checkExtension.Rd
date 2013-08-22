@@ -1,13 +1,13 @@
-\name{checkExtension}
-\alias{checkExtension}
+\name{.checkExtension}
+\alias{.checkExtension}
 \title{
-checkExtension: checks for correct extensions of file names
+.checkExtension: checks for correct extensions of file names
 }
 \description{
 This is an internal function of the GenePattern package.
 }
 \usage{
-checkExtension(file.name, extension)
+.checkExtension(file.name, extension)
 }
 \arguments{
   \item{file.name }{
