@@ -1,7 +1,8 @@
 getGO <- function (vec,
                    is.symbol = TRUE,
                    path = NULL) {
-    ## reformats GO.db keys 
+    require (org.Hs.eg.db)
+    ## reformats GO.db keys
     myGO2df <- function (go) {
         dfr <- as.data.frame (Term (go$GOID))
         dfr <- cbind (go$Evidence, go$Ontology, dfr)
