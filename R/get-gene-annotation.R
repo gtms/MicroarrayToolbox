@@ -1,5 +1,8 @@
 getGeneAnnotation <- function (affy.ids,
                                annotation.pkg) {
+    if (!require (sprintf ("%s.db", annotation.pkg), character.only = TRUE)) {
+        stop (sprintf ("Error: please ensure that package %s is installed", sprintf ("%s.db", annotation.pkg)))
+    }
     ## some probesets are mapped into more than one genomic location
     map.lst <- lookUp (affy.ids, annotation.pkg, "MAP")
     ## which ones?
