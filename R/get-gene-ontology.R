@@ -21,7 +21,7 @@ getGO <- function (vec,
         tab <- tab[tab$gene_id%in% vec, ]
     }
     
-    go.terms <- mget (tab$gene_id, org.Hs.egGO, ifnotfound = NA)
+    go.terms <- mget (tab$gene_id, get ("org.Hs.egGO"), ifnotfound = NA)
     go.terms <- setNames (go.terms, tab$symbol)
     go.terms <- go.terms[!is.na (go.terms)]
     go.lst <- llply (go.terms, function (gene) ldply (gene, myGO2df))
