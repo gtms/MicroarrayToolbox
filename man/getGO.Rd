@@ -5,10 +5,11 @@ getGO: retrieves the Gene Ontology terms associated to a string of
 gene symbols
 }
 \description{
-Given a character vector of gene symbols OR a numeric vector of Entrez
-IDs, returns a data table with the following variables: genes
-queried; Gene Ontology identifiers; Gene Ontology evidence codes; Gene
-Ontology domain terms and Gene Ontology terms.
+Given a character vector of gene symbols OR a numeric vector of entrez
+gene IDs, returns a data table with the following variables: entrez
+gene IDs of queried genes; gene symbols queried; Gene Ontology
+identifiers; Gene Ontology evidence codes; Gene Ontology domain terms
+and Gene Ontology terms.
 }
 \usage{
 getGO(vec, is.symbol = TRUE, path = NULL)
@@ -28,17 +29,22 @@ the csv file of the output table. Defaults to NULL
 }
 }
 \details{
-If path is NULL, no file will be written on disk.
+The argument 'path' should be a character string concatenating the
+path and the name of the file to be written on disk. If 'path' is NULL,
+no file will be written on disk.
 }
 \value{
 A data table with the following variables:
-  \item{gene}{factor of the queried genes symbols}
-  \item{go}{character vector of the retrieved Gene Ontology identifiers}
-  \item{go.evidence}{factor of the retrieved Gene Ontology evidence
+  \item{gene.id}{character vector of the entrez gene IDs of the
+  queried genes}
+  \item{symbol}{character vector of the gene symbols of the queried
+  genes}
+  \item{go.id}{character vector of the retrieved Gene Ontology identifiers}
+  \item{evidence}{character vector of the retrieved Gene Ontology evidence
   codes (\url{http://www.geneontology.org/GO.evidence.shtml})}
-  \item{go.ontology}{factor of the retrieved Gene Ontology domains
+  \item{ontology}{character vector of the retrieved Gene Ontology domain
   terms (\url{http://www.geneontology.org/GO.ontology.structure.shtml})}
-  \item{term}{factor of the Gene Ontology terms}
+  \item{term}{character vector of the retrieved Gene Ontology terms}
 }
 \author{
 Gil Tomas
