@@ -3,8 +3,7 @@ jetSet <- function (gct,
     dfr <- jscores (annotation.pkg)
     dtb <- data.table (dfr, keep.rownames = TRUE)
     setnames (dtb, "rn", "probeset")
-    dtb[, new.symb := getSYMBOL (probeset, annotation.pkg)]
-    top.probesets <- dtb[, probeset[which.max (overall)], by = new.symb]
+    top.probesets <- dtb[, probeset[which.max (overall)], by = symbol]
     keep <- rownames (gct$data) %in% top.probesets[, V1]
     rd <- gct$row.descriptions[keep]
     dt <- gct$data[keep, ]
