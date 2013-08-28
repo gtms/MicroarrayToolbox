@@ -72,13 +72,3 @@ represent a gene. BMC Bioinformatics. 12:474.
 \seealso{
 'jscores' for a more convenient way to access this data
 }
-\examples{
-## Here is the EntrezID for the ESR1 gene
-id <- "2099"
-       
-## Extract the scores for all probe sets detecting ESR1
-scores.hgu95av2[which(scores.hgu95av2$EntrezID == id), ]
-     
-## Compare to the recommended function 'jscores'
-jscores("hgu95av2", eg = "2099")
-}
