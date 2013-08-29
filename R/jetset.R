@@ -1,5 +1,6 @@
 jetSet <- function (gct,
                     annotation.pkg) {
+    require (jetset)
     dfr <- jscores (annotation.pkg)
     dtb <- data.table (dfr, keep.rownames = TRUE)
     setnames (dtb, "rn", "probeset")
