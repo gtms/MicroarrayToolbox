@@ -1,3 +1,11 @@
+MicroarrayToolbox 0.5
+--------------------------------------------------------------------------------
+
+* Removed function jetset.R.  Package installation is now much simpler.
+
+* Added function instant-packages.R, to automatically install a list of packages.
+
+
 MicroarrayToolbox 0.2
 --------------------------------------------------------------------------------
 
