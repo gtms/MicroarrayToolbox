@@ -10,8 +10,8 @@ http://www.broadinstitute.org/cancer/software/genepattern/gp_guides/file-formats
 \tabular{ll}{
 Package: \tab MicroarrayToolbox\cr
 Type: \tab Package\cr
-Version: \tab 0.2\cr
-Date: \tab 2013-08-22\cr
+Version: \tab 0.5\cr
+Date: \tab 2014-11-20\cr
 License: \tab GPL (>= 3)\cr
 }
 }
