@@ -24,4 +24,4 @@ To install MicroarrayToolbox on your system, use the 'devtools' package:
 
     ## install.packages ("devtools")
     library (devtools)
-    install_github ("MicroarrayToolbox", user = "gtms")
+    install_github ("gtms/MicroarrayToolbox")
