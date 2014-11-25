@@ -46,3 +46,4 @@ pkg.dfr <- data.frame (pkg = c (cran.pkgs, bioc.pkgs),
 pkg.dfr <- pkg.dfr[order (pkg.dfr$pkg), ]
 
 instant.pkgs (pkg.dfr, verbose = TRUE)
+}
